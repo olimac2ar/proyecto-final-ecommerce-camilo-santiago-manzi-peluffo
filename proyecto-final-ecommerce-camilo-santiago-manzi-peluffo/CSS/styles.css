@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family:'Courier New', Courier, monospace; */
+    /* color: #68A8FC; */
+    text-decoration: none;
+    color:#68A8FC;
+}
+
+.text_Form{
+    padding: 20px;
+    text-align: center;
+    font-size: 42px;
+}
+
+
+form{
+    padding: 10px;
+    font-size: 32px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+#email {
+    padding: 10px;
+    margin: 10px
+}
+
+#nombre {
+    padding: 10px;
+    margin: 10px;
+}
+
+#mensaje {
+    padding: 10px;
+    margin: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minxmax (250px, 1fr));
+    gap: 10px;
+    transform: translateY(-5px);
+    padding: 20px;
+    margin: 10px;
+    background-color:#BCECFC;
+}
+
+#reviewExcercise{
+    grid-column: 1 / 2;
+}
+#reviewOpening{
+    grid-column: 2 / 4;
+    text-align: end;
+}
+#reviewMidgame {
+    grid-column: 1 / 3;
+}
+#reviewEndgame {
+    text-align: end;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.product {
+    background-color: #BCECFC;
+    color: white;
+    padding: 30px;
+    margin: 10px;
+    flex: 1 1 200px;
+    box-sizing: border-box;
+}
+main {
+    background-color: #F6F9F1;
+    font-family: 'Geist Mono', monospace;
+    justify-content: space-around;
+    align-items: space-between;
+}
+.nav-list {
+    position: sticky;
+    list-style: none;
+    font-family: "Kanit", sans-serif;
+    background-color: #68FCF2;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-wrap:wrap;
+    font-size: 24px;
+    height: auto;
+}
+header{
+    font-family: 'Geist Mono', monospace;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    font-size: 36px;
+    height: auto;
+}
+
+footer{
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #68FCF2;
+    display:flex;
+    justify-content:end;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    img{
+        width: 200px;
+    }
+    #reviewOpening {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    #reviewExcercise {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    #reviewMidgame {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    #reviewEnding {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    * {
+        font-size: 14px;
+    }
+    form {
+        display: grid;
+        height: 80vh;
+    }
+}

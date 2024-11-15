@@ -1,0 +1,1 @@
+Fase temprana de página web con el fin de simular un sitio para vender junto al accionar de un carrito de compras.

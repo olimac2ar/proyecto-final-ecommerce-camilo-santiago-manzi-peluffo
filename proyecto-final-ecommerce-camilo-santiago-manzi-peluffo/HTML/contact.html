@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <title>Proyecto_PreEntrega</title>
+</head>
+<body>
+    <header>
+        <h1> SellChessAr </h1>
+    </header>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html">Inicio</a></li>
+            
+            <li><a href="review.html">Reseñas</a></li>
+
+            <li><a href="product.html">Productos</a></li>
+
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="text_Form"> 
+        <p> Para cualquier consulta, enviar un mensaje en el siguiente formulario! </p>
+        </div>
+        <form action="https://formspree.io/f/mldenkbq" method="POST" >
+            <label for="nombre">Nombre:</label>
+            <input type ="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" name="email" id="email" placeholder="Escribe tu email" required>
+            <textarea name="mensaje" id="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje" required></textarea>
+            <button type ="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <p> © 2024 SellChessAr. Todos los derechos reservados </p>
+    </footer>
+</body>
+</html>
